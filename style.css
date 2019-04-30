@@ -4,10 +4,16 @@
  box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(238, 226, 181);
+}
+
 .wrap {
- width: 80%;
- margin: 5vh auto 0;
+ width: 90%;
+ margin: 10px auto;
  font-family: 'open sans', roboto, sans-serif; 
+ background-color: cornsilk;
+ padding: 40px 10px;
 }
 
 
@@ -33,16 +39,16 @@ border: 3px solid gray;
  text-align: center;
 }
 
-.play input{
+.play input {
  height: 90px;
  font-size: 40px;
  padding: 20px;
  width: 400px;
- border: 3px solid black;
+ border: 3px solid #333;
  text-align: center;
 }
 .play button {
- width: 40%;
+ width: 400px;
  height:90px;
  text-align: center;
  padding: 20px 60px;
@@ -53,6 +59,13 @@ border: 3px solid gray;
  color: white;
  cursor: pointer;
  letter-spacing: 6px;
+ transition: .5s;
+}
+
+.play button:hover {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
 }
 
 .panel {
@@ -62,6 +75,7 @@ border: 3px solid gray;
 
 .panel, .score {
  font-size: 26px;
+ text-align: center;
 }
 .panel span, .score span {
  font-weight: bold;
@@ -71,8 +85,9 @@ border: 3px solid gray;
  .wrap {
  width: 90%;
  }
- .play input{
+ .play input {
   height: 70px;
+  width: 80%;
   font-size: 30px;
   display: block;
   margin: 20px auto;
@@ -80,11 +95,23 @@ border: 3px solid gray;
  }
  .play button {
   height: 74px;
-  font-size: 30px;
+  width: 80%;
+  font-size: 25px;
   display: block;
   text-align: center;
   margin: 0 auto;
   padding: 0 20px ;
  }
+
+ .panel {
+    margin: 20px 0;
+   }
+   
+   .panel, .score {
+    font-size: 18px;
+   }
+   .panel span, .score span {
+    font-weight: bold;
+   }
 
 }

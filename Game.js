@@ -38,7 +38,7 @@ class Game {
         if (this.inputBid.value < 1) return alert('Stawka, o którą chcesz grać jest za mała');
         const bid = Math.floor(this.inputBid.value);
         if (!this.wallet.checkCanPlay(bid)) {
-            return alert('Nie masz tylu środków');
+            return alert('Nie masz tyle środków');
         }
         this.wallet.changeWallet(bid, '-');
         this.draw = new Draw();
@@ -49,6 +49,5 @@ class Game {
         this.stats.addGameTostatistics(win, bid);
         this.render(colors, this.wallet.getWalletValue(), win, this.stats.showGameStatistics(), bid, wonMoney)
         this.inputBid.value = '';
-
     }
 }

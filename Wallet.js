@@ -17,7 +17,6 @@ class Wallet {
                     throw new Error('nieprawidłowy typ działania');
                 }
             } else {
-                console.log(typeof value);
                 throw new Error('nieprawidłowa liczba');
             }
         }
